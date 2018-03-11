@@ -2,7 +2,7 @@
 
 ## Software
 
-`driver` contains a kernel module. Add it to taihen's `config.txt` KERNEL section. You can download a precompiled `.skprx` from the [Releases](https://github.com/xyzz/gamecard-microsd/releases) section.
+`driver` contains a kernel module. Add it to taihen's `config.txt` KERNEL section. You can download a precompiled `.skprx` from the [Releases](https://github.com/Ninoh-FOX/gamecard-microsd-uma0/releases) section.
 
 Your microSD card must have no partition table. exFAT filesystem should be written directly to the device. On Linux, do:
 
@@ -53,25 +53,9 @@ Once you insert the adapter, you can replace microSD without taking the adapter 
 
 ## Version history
 
-### v3.0
-
-* Reduced gamecard pads total width by 0.2mm.
-* Removed testpads.
-* Removed unused INS pad on the microSD socket side.
-* Changed routing to reduce number of VIAs and the probability of electrons falling out of the board.
-
-This design is not tested yet.
-
-### v2.0
-
-* Reduced gamecard pads total width by 1.0mm.
-* Removed fourth microsd socket leg.
-
-This design is not tested by me yet, but other people confirmed it works.
-
 ### v1.0
 
-Original design.
+mod for original code of @xyzz for mount sd2vita in uma0
 
 ## Alternative designs
 
