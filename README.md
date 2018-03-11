@@ -92,3 +92,4 @@ Contents of the `board` directory are licensed under [CC0](https://creativecommo
 
 * @motoharu-gosuto for their work on gamecard RE
 * @TheOfficialFlow for providing original version of the usbmc plugin
+* @xyzz for the original code https://github.com/xyzz/gamecard-microsd
