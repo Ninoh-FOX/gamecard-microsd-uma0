@@ -26,8 +26,8 @@
 
 #include <taihen.h>
 
-#define MOUNT_POINT_ID 0x800
-#define MOUNT_POINT_ID2 0xF00
+#define MOUNT_POINT_ID 0xF00
+#define MOUNT_POINT_ID2 0x800
 
 int module_get_offset(SceUID pid, SceUID modid, int segidx, size_t offset, uintptr_t *addr);
 
@@ -56,8 +56,8 @@ typedef struct {
 	int unk7;
 } SceIoMountPoint;
 
-static SceIoDevice uma_ux0_dev = { "uma0:", "exfatuma0", "sdstor0:gcd-lp-ign-entire", "sdstor0:gcd-lp-ign-entire", MOUNT_POINT_ID2 };
-static SceIoDevice uma_uma0_dev = { "ux0:", "exfatux0", "sdstor0:xmc-lp-ign-userext", "sdstor0:xmc-lp-ign-userext", MOUNT_POINT_ID };
+static SceIoDevice uma_ux0_dev = { "uma0:", "exfatuma0", "sdstor0:gcd-lp-ign-entire", "sdstor0:gcd-lp-ign-entire", MOUNT_POINT_ID };
+static SceIoDevice uma_uma0_dev = { "ux0:", "exfatux0", "sdstor0:xmc-lp-ign-userext", "sdstor0:xmc-lp-ign-userext", MOUNT_POINT_ID2 };
 
 static SceIoMountPoint *(* sceIoFindMountPoint)(int id) = NULL;
 
